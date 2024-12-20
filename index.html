@@ -1,0 +1,70 @@
+	<html>
+	<head>
+		<title>java</title>
+		<style>
+			body
+{
+	margin:0;
+}
+.textbox{
+	width:170px;
+	height:25px;
+	background-color:#EEE;
+	border-radius:5px;
+	text-align:right;
+}
+.button{
+	width:40px;
+	height:25px;
+	background-color:green;
+	border-radius:10px;
+}
+.button1{
+	width:40px;
+	height:25px;
+	background-color:pink;
+	border-radius:10px;
+}
+		</style>
+			<script>
+							function show(a)
+			{
+				var currvalue=document.getElementById("n1").value;
+				var targetvalue=currvalue+a;
+				document.getElementById("n1").value=targetvalue;
+			}
+			function cancel1()
+			{
+				document.getElementById("n1").value="";
+			}
+			function z()
+			{
+				document.getElementById("n1").value=eval(n1.value);
+			}
+			</script>
+	</head>
+	<script>
+		
+	</script>
+	<body>	<div name="mydiv" style="text-align:center;">
+		<input class="textbox" type="text" placeholder="enter a number" id="n1" /></br>
+		<input class="button" type="button" value="7" onclick="show(7)">
+		<input class="button" type="button" value="8" onclick="show(8)">
+		<input class="button" type="button" value="9" onclick="show(9)">
+		<input class="button1" type="button" value="+" onclick="show('+')"></br>
+		<input class="button" type="button" value="4" onclick="show(4)">
+		<input class="button" type="button" value="5" onclick="show(5)">
+		<input class="button" type="button" value="6" onclick="show(6)">
+		<input class="button1" type="button" value="-" onclick="show('-')"></br>
+		<input class="button" type="button" value="1" onclick="show(1)">
+		<input class="button" type="button" value="2" onclick="show(2)">
+		<input class="button" type="button" value="3" onclick="show(3)">
+		<input class="button1" type="button" value="*" onclick="show('*')"></br>
+		<input class="button" type="button" value="0" onclick="show(0)">
+		<input class="button1" type="button" value="=" onclick="z()">
+		<input class="button1" type="button" value="CLR" onclick="cancel1()">
+		<input class="button1" type="button" value="/" onclick="show('/')">
+		</div>
+	</body>
+	
+</html>
